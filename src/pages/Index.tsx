@@ -32,7 +32,7 @@ const Index = () => {
               onClick={() => setIsRegistered(false)}
               className="bg-primary hover:bg-primary/90 text-black font-semibold px-8"
             >
-              Вернуться на главную
+              Продолжить
             </Button>
           </div>
         </div>
