@@ -65,7 +65,7 @@ const Index = () => {
               />
             </div>
             <Button className="w-full bg-primary hover:bg-primary/90 text-black font-semibold">
-              Получить консультацию
+              Зарегистрироваться
             </Button>
           </form>
           
