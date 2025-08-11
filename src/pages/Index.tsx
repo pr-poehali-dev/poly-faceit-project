@@ -37,10 +37,6 @@ const Index = () => {
             <Button size="lg" className="bg-primary hover:bg-primary/90">
               Узнать больше
             </Button>
-            <Button variant="outline" size="lg">
-              <Icon name="Play" size={20} className="mr-2" />
-              Смотреть видео
-            </Button>
           </div>
         </div>
 
