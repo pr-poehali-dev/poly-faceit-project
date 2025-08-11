@@ -1,8 +1,44 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const [isRegistered, setIsRegistered] = useState(false);
+  
+  const handleRegistration = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsRegistered(true);
+  };
+
+  if (isRegistered) {
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-center max-w-2xl mx-auto px-6">
+          <div className="mb-8">
+            <Icon name="CheckCircle" size={80} className="text-primary mx-auto mb-6" />
+            <h1 className="text-5xl font-bold mb-6">
+              Регистрация 
+              <span className="text-primary block">завершена!</span>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              Спасибо за регистрацию! Мы свяжемся с вами в ближайшее время.
+            </p>
+            <div className="w-48 h-1 bg-primary rounded-full mx-auto mb-8"></div>
+          </div>
+          
+          <div className="space-y-4">
+            <Button 
+              onClick={() => setIsRegistered(false)}
+              className="bg-primary hover:bg-primary/90 text-black font-semibold px-8"
+            >
+              Вернуться на главную
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -41,11 +77,12 @@ const Index = () => {
         <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
 
           
-          <form className="space-y-4">
+          <form onSubmit={handleRegistration} className="space-y-4">
             <div>
               <Input 
                 placeholder="Ваше имя"
                 className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+                required
               />
             </div>
             <div>
@@ -53,6 +90,7 @@ const Index = () => {
                 type="email"
                 placeholder="Email"
                 className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+                required
               />
             </div>
             <div>
@@ -60,9 +98,10 @@ const Index = () => {
                 type="tel"
                 placeholder="Телефон"
                 className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+                required
               />
             </div>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-black font-semibold">
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-black font-semibold">
               Зарегистрироваться
             </Button>
           </form>
