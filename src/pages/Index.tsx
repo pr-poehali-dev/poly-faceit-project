@@ -67,9 +67,7 @@ const Index = () => {
             </Button>
           </form>
           
-          <p className="text-sm text-gray-400 mt-4 text-center">
-            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-          </p>
+
         </div>
       </section>
     </div>
