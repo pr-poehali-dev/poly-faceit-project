@@ -33,11 +33,7 @@ const Index = () => {
           <p className="text-xl text-gray-300 mb-8">
             
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Узнать больше
-            </Button>
-          </div>
+
         </div>
 
         {/* Registration Panel */}
