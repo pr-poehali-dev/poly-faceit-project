@@ -1,12 +1,88 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-[#00a9ff]">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600"></p>
-      </div>
+    <div className="min-h-screen bg-black text-white">
+      {/* Header */}
+      <header className="container mx-auto px-6 py-8 flex justify-between items-center">
+        <div className="text-2xl font-bold">Logo</div>
+        <nav className="hidden md:flex space-x-8">
+          <a href="#" className="hover:text-primary transition-colors">Главная</a>
+          <a href="#" className="hover:text-primary transition-colors">Услуги</a>
+          <a href="#" className="hover:text-primary transition-colors">О нас</a>
+          <a href="#" className="hover:text-primary transition-colors">Контакты</a>
+        </nav>
+        <Button variant="outline" className="md:hidden">
+          <Icon name="Menu" size={20} />
+        </Button>
+      </header>
+
+      {/* Hero Section */}
+      <section className="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Создаем будущее
+            <span className="text-primary block">вместе с вами</span>
+          </h1>
+          <p className="text-xl text-gray-300 mb-8">
+            Профессиональные решения для вашего бизнеса. 
+            Мы поможем воплотить ваши идеи в жизнь.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              Узнать больше
+            </Button>
+            <Button variant="outline" size="lg">
+              <Icon name="Play" size={20} className="mr-2" />
+              Смотреть видео
+            </Button>
+          </div>
+        </div>
+
+        {/* Registration Panel */}
+        <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-semibold text-primary mb-2">
+              Начните прямо сейчас
+            </h3>
+            <p className="text-gray-300">
+              Зарегистрируйтесь и получите консультацию
+            </p>
+          </div>
+          
+          <form className="space-y-4">
+            <div>
+              <Input 
+                placeholder="Ваше имя"
+                className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+              />
+            </div>
+            <div>
+              <Input 
+                type="email"
+                placeholder="Email"
+                className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+              />
+            </div>
+            <div>
+              <Input 
+                type="tel"
+                placeholder="Телефон"
+                className="bg-black/50 border-primary/30 text-white placeholder:text-gray-400"
+              />
+            </div>
+            <Button className="w-full bg-primary hover:bg-primary/90 text-black font-semibold">
+              Получить консультацию
+            </Button>
+          </form>
+          
+          <p className="text-sm text-gray-400 mt-4 text-center">
+            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
