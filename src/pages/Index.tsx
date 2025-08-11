@@ -7,7 +7,11 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="container mx-auto px-6 py-8 flex justify-between items-center">
-        <div className="text-2xl font-bold">Logo</div>
+        <img 
+          src="https://cdn.poehali.dev/files/770c0483-d28e-4bd3-be81-de1ee9a24643.png" 
+          alt="Logo" 
+          className="h-10 w-auto"
+        />
         <nav className="hidden md:flex space-x-8">
           <a href="#" className="hover:text-primary transition-colors">Главная</a>
           <a href="#" className="hover:text-primary transition-colors">Услуги</a>
