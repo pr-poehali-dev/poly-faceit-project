@@ -39,9 +39,7 @@ const Index = () => {
 
         {/* Registration Panel */}
         <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
-          <div className="text-center mb-6">
-            <h3 className="font-bold text-primary mb-2 text-xl">Зарегистрироваться</h3>
-          </div>
+
           
           <form className="space-y-4">
             <div>
