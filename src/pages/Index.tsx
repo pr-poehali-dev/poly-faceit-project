@@ -31,8 +31,7 @@ const Index = () => {
             <span className="text-primary block">POLY FACEIT</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            Профессиональные решения для вашего бизнеса. 
-            Мы поможем воплотить ваши идеи в жизнь.
+            
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
