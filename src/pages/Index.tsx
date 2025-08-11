@@ -40,12 +40,9 @@ const Index = () => {
         {/* Registration Panel */}
         <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
           <div className="text-center mb-6">
-            <h3 className="text-2xl font-semibold text-primary mb-2">
-              Начните прямо сейчас
+            <h3 className="text-4xl font-bold text-primary mb-2">
+              ЗАРЕГИСТРИРОВАТЬСЯ
             </h3>
-            <p className="text-gray-300">
-              Зарегистрируйтесь и получите консультацию
-            </p>
           </div>
           
           <form className="space-y-4">
