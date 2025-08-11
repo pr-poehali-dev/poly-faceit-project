@@ -33,6 +33,7 @@ const Index = () => {
           <p className="text-xl text-gray-300 mb-8">
             
           </p>
+          <div className="w-24 h-1 bg-primary rounded-full"></div>
 
         </div>
 
