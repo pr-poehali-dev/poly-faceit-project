@@ -27,8 +27,8 @@ const Index = () => {
       <section className="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Создаем будущее
-            <span className="text-primary block">вместе с вами</span>
+            Добро пожаловать
+            <span className="text-primary block">POLY FACEIT</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8">
             Профессиональные решения для вашего бизнеса. 
