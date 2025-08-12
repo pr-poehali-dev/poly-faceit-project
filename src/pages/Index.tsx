@@ -40,14 +40,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Mobile Header */}
-      <header className="px-4 py-6 flex justify-center">
-        <img 
-          src="https://cdn.poehali.dev/files/770c0483-d28e-4bd3-be81-de1ee9a24643.png" 
-          alt="Logo" 
-          className="h-8 w-auto"
-        />
-      </header>
+
 
       {/* Mobile Content */}
       <div className="px-4 py-8">
