@@ -14,15 +14,28 @@ const Index = () => {
 
   if (showNextPage) {
     return (
-      <div className="min-h-screen bg-black text-white px-4 py-8">
-        {/* Новая страница с черным фоном */}
-        <div className="text-center">
-          <h1 className="text-3xl font-bold mb-8 text-primary">
-            Следующий шаг
-          </h1>
-          <p className="text-lg text-gray-300">
-            Здесь будет добавлен контент
-          </p>
+      <div className="min-h-screen bg-black text-white flex flex-col">
+        {/* Основной контент */}
+        <div className="flex-1 px-4 py-8">
+          {/* Контент будет здесь */}
+        </div>
+        
+        {/* Нижняя панель */}
+        <div className="bg-primary/10 border-t border-primary/20 p-4">
+          <div className="flex justify-center space-x-4">
+            <Button variant="ghost" className="text-white hover:text-primary">
+              <Icon name="Home" size={20} />
+            </Button>
+            <Button variant="ghost" className="text-white hover:text-primary">
+              <Icon name="Search" size={20} />
+            </Button>
+            <Button variant="ghost" className="text-white hover:text-primary">
+              <Icon name="Plus" size={20} />
+            </Button>
+            <Button variant="ghost" className="text-white hover:text-primary">
+              <Icon name="User" size={20} />
+            </Button>
+          </div>
         </div>
       </div>
     );
