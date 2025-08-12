@@ -6,6 +6,7 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const [isRegistered, setIsRegistered] = useState(false);
   const [showNextPage, setShowNextPage] = useState(false);
+  const [activeTab, setActiveTab] = useState('home');
   
   const handleRegistration = (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,16 +24,48 @@ const Index = () => {
         {/* Нижняя панель */}
         <div className="bg-primary/10 border-t border-primary/20 p-4">
           <div className="flex justify-center space-x-4">
-            <Button variant="ghost" className="text-white hover:text-primary">
+            <Button 
+              variant="ghost" 
+              onClick={() => setActiveTab('home')}
+              className={`p-3 rounded-full ${
+                activeTab === 'home' 
+                  ? 'bg-primary text-black' 
+                  : 'text-white hover:text-primary'
+              }`}
+            >
               <Icon name="Home" size={20} />
             </Button>
-            <Button variant="ghost" className="text-white hover:text-primary">
+            <Button 
+              variant="ghost" 
+              onClick={() => setActiveTab('search')}
+              className={`p-3 rounded-full ${
+                activeTab === 'search' 
+                  ? 'bg-primary text-black' 
+                  : 'text-white hover:text-primary'
+              }`}
+            >
               <Icon name="Search" size={20} />
             </Button>
-            <Button variant="ghost" className="text-white hover:text-primary">
+            <Button 
+              variant="ghost" 
+              onClick={() => setActiveTab('missions')}
+              className={`p-3 rounded-full ${
+                activeTab === 'missions' 
+                  ? 'bg-primary text-black' 
+                  : 'text-white hover:text-primary'
+              }`}
+            >
               <Icon name="Target" size={20} />
             </Button>
-            <Button variant="ghost" className="text-white hover:text-primary">
+            <Button 
+              variant="ghost" 
+              onClick={() => setActiveTab('profile')}
+              className={`p-3 rounded-full ${
+                activeTab === 'profile' 
+                  ? 'bg-primary text-black' 
+                  : 'text-white hover:text-primary'
+              }`}
+            >
               <Icon name="User" size={20} />
             </Button>
           </div>
