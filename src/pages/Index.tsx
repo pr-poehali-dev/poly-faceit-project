@@ -30,7 +30,7 @@ const Index = () => {
               <Icon name="Search" size={20} />
             </Button>
             <Button variant="ghost" className="text-white hover:text-primary">
-              <Icon name="Plus" size={20} />
+              <Icon name="Target" size={20} />
             </Button>
             <Button variant="ghost" className="text-white hover:text-primary">
               <Icon name="User" size={20} />
