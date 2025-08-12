@@ -5,11 +5,28 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const [isRegistered, setIsRegistered] = useState(false);
+  const [showNextPage, setShowNextPage] = useState(false);
   
   const handleRegistration = (e: React.FormEvent) => {
     e.preventDefault();
     setIsRegistered(true);
   };
+
+  if (showNextPage) {
+    return (
+      <div className="min-h-screen bg-black text-white px-4 py-8">
+        {/* Новая страница с черным фоном */}
+        <div className="text-center">
+          <h1 className="text-3xl font-bold mb-8 text-primary">
+            Следующий шаг
+          </h1>
+          <p className="text-lg text-gray-300">
+            Здесь будет добавлен контент
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   if (isRegistered) {
     return (
@@ -28,7 +45,7 @@ const Index = () => {
           </div>
           
           <Button 
-            onClick={() => setIsRegistered(false)}
+            onClick={() => setShowNextPage(true)}
             className="w-full bg-primary hover:bg-primary/90 text-black font-semibold py-3"
           >
             Продолжить
