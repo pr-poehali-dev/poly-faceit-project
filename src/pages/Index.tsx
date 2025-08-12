@@ -54,7 +54,7 @@ const Index = () => {
         </div>
 
         {/* Registration Form */}
-        <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 max-w-sm mx-auto">
+        <div className="bg-primary/10 border border-primary/20 p-6 max-w-sm py-6 px-6 mx-0 rounded-3xl">
           <form onSubmit={handleRegistration} className="space-y-4">
             <div>
               <Input 
