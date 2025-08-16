@@ -29,7 +29,7 @@ const Index = () => {
               onClick={() => setActiveTab('home')}
               className={`p-3 rounded-full ${
                 activeTab === 'home' 
-                  ? 'bg-primary text-black' 
+                  ? 'bg-primary text-white' 
                   : 'text-white hover:text-primary'
               }`}
             >
@@ -40,7 +40,7 @@ const Index = () => {
               onClick={() => setActiveTab('search')}
               className={`p-3 rounded-full ${
                 activeTab === 'search' 
-                  ? 'bg-primary text-black' 
+                  ? 'bg-primary text-white' 
                   : 'text-white hover:text-primary'
               }`}
             >
@@ -51,7 +51,7 @@ const Index = () => {
               onClick={() => setActiveTab('missions')}
               className={`p-3 rounded-full ${
                 activeTab === 'missions' 
-                  ? 'bg-primary text-black' 
+                  ? 'bg-primary text-white' 
                   : 'text-white hover:text-primary'
               }`}
             >
@@ -62,7 +62,7 @@ const Index = () => {
               onClick={() => setActiveTab('profile')}
               className={`p-3 rounded-full ${
                 activeTab === 'profile' 
-                  ? 'bg-primary text-black' 
+                  ? 'bg-primary text-white' 
                   : 'text-white hover:text-primary'
               }`}
             >
