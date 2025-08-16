@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Profile = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('overview');
 
   // Компонент круговой диаграммы
@@ -83,6 +86,16 @@ const Profile = () => {
       {/* Header */}
       <div className="bg-gray-800 border-b border-gray-700 p-6">
         <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-4">
+            <Button 
+              onClick={() => navigate('/')}
+              variant="ghost"
+              className="text-primary hover:text-primary/80"
+            >
+              <Icon name="ArrowLeft" size={20} className="mr-2" />
+              Назад на главную
+            </Button>
+          </div>
           <div className="flex items-center space-x-6">
             <img 
               src="https://cdn.poehali.dev/files/457c776b-d149-4f61-b76d-ccf92e23492e.png" 
