@@ -6,6 +6,7 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const [isRegistered, setIsRegistered] = useState(false);
   const [showNextPage, setShowNextPage] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
   const [activeTab, setActiveTab] = useState('home');
   
   const handleRegistration = (e: React.FormEvent) => {
@@ -59,12 +60,8 @@ const Index = () => {
             </Button>
             <Button 
               variant="ghost" 
-              onClick={() => setActiveTab('profile')}
-              className={`p-3 rounded-full ${
-                activeTab === 'profile' 
-                  ? 'bg-primary text-white' 
-                  : 'text-white hover:text-primary'
-              }`}
+              onClick={() => setShowProfile(true)}
+              className="p-3 rounded-full text-white hover:text-primary"
             >
               <Icon name="User" size={20} />
             </Button>
