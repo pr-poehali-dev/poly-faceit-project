@@ -76,7 +76,14 @@ const Index = () => {
       <div className="min-h-screen bg-black text-white flex items-center justify-center px-4">
         <div className="text-center w-full max-w-sm mx-auto">
           <div className="mb-8">
-            <Icon name="CheckCircle" size={60} className="text-primary mx-auto mb-6" />
+            {/* Анимированная галочка */}
+            <div className="mx-auto mb-6 relative w-24 h-24">
+              <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center animate-pulse">
+                <Icon name="Check" size={48} className="text-black animate-bounce" />
+              </div>
+              <div className="absolute inset-0 w-24 h-24 bg-primary/20 rounded-full animate-ping"></div>
+            </div>
+            
             <h1 className="text-3xl font-bold mb-4">
               Регистрация 
               <span className="text-primary block">завершена!</span>
