@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const navigate = useNavigate();
   const [isRegistered, setIsRegistered] = useState(false);
   const [showNextPage, setShowNextPage] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -97,10 +95,10 @@ const Index = () => {
           </div>
           
           <Button 
-            onClick={() => navigate('/profile')}
+            onClick={() => setShowNextPage(true)}
             className="w-full bg-primary hover:bg-primary/90 text-black font-semibold py-3"
           >
-            Перейти в профиль
+            Продолжить
           </Button>
         </div>
       </div>
